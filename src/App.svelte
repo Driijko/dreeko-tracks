@@ -15,7 +15,7 @@ main {
   position: relative;
 }
 #logo {
-  padding-top: 200px;
+  padding-top: 250px;
   border: 1px solid hsl(170, 100%, 0%);
   position: absolute;
   left: 0;
@@ -29,12 +29,13 @@ main {
   /* background-color: hsl(170, 100%, 50%); */
   background-image: linear-gradient(
     180deg,
-    hsl(170, 100%, 50%),
+    hsl(170, 100%, 30%) 0%,
+    hsl(170, 100%, 50%) 15%,
     hsl(170, 100%, 100%)
   );
   color: hsl(50, 100%, 40%);
   font-family: "Playwrite FR Trad", cursive;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 2.5;
 }
 </style>

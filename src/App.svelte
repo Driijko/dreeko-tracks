@@ -1,15 +1,17 @@
 <script>
-
+  import { breakpoint } from "./dynamic/breakpoint";
 </script>
 
 <main>
-  <div id="logo">
-    DREEKO<br/> TRACKS
-  </div>
+  <div>{$breakpoint}</div>
 </main>
 
+  <!-- <div id="logo">
+    DREEKO<br/> TRACKS
+  </div> -->
+
 <style>
-main {
+/* main {
   width: 100%;
   height: 100%;
   position: relative;
@@ -26,7 +28,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: hsl(170, 100%, 50%); */
   background-image: linear-gradient(
     180deg,
     hsl(170, 100%, 50%) 15%,
@@ -36,5 +37,5 @@ main {
   font-family: "Playwrite FR Trad", cursive;
   font-size: 70px;
   line-height: 2.5;
-}
+} */
 </style>

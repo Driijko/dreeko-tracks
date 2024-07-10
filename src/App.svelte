@@ -29,7 +29,6 @@ main {
   /* background-color: hsl(170, 100%, 50%); */
   background-image: linear-gradient(
     180deg,
-    hsl(170, 100%, 30%) 0%,
     hsl(170, 100%, 50%) 15%,
     hsl(170, 100%, 100%)
   );

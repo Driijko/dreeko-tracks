@@ -11,6 +11,3 @@ export function setBreakpoint() {
     breakpoint.set("desktop");
   };
 };
-
-// RUN 
-setBreakpoint();

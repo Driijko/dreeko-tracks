@@ -1,5 +1,8 @@
 <script>
   import { breakpoint } from "./dynamic/breakpoint";
+  import viewportSetup from "./scripts/viewportSetup";
+
+  viewportSetup();
 </script>
 
 <main>

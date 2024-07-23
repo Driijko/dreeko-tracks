@@ -1,12 +1,12 @@
 <script>
-  import { breakpoint } from "./dynamic/breakpoint";
   import viewportSetup from "./scripts/viewport/viewportSetup";
+  import LoadingPage from "./components/2-pages/LoadingPage.svelte";
 
   viewportSetup();
 </script>
 
 <main>
-  <div>{$breakpoint}</div>
+  <LoadingPage />
 </main>
 
   <!-- <div id="logo">
@@ -14,6 +14,10 @@
   </div> -->
 
 <style>
+main {
+  width: 100%;
+  height: 100%;
+}
 /* main {
   width: 100%;
   height: 100%;

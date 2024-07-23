@@ -20,3 +20,5 @@ const playlist = [
     path: "./audio/mybloodydisco.mp3"
   },
 ];
+
+export default playlist;

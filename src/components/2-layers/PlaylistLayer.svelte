@@ -27,10 +27,8 @@
     justify-content: center;
   }
   .playlist-container {
-    border-width: 0.5vw;
+    border-width: var(--bw);
     border-style: solid;
-    border-top: none;
-    border-bottom: none;
     width: 100%;
     max-width: 500px;
   }

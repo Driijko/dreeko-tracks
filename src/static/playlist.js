@@ -4,7 +4,7 @@ const playlist = [
     path: "./audio/buttercup.mp3",
     colors: {
       primary: "hsl(0, 0%, 100%)",
-      secondary: "hsla(0, 0%, 0%, 0.8)",
+      secondary: "hsla(0, 0%, 0%, 0.5)",
     },
   },
   {

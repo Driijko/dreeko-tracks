@@ -10,7 +10,7 @@
 <main>
   <BackgroundLayer />
   <PlaylistLayer />
-  <!-- <LoadingLayer /> -->
+  <LoadingLayer />
 </main>
 
   <!-- <div id="logo">

@@ -19,13 +19,14 @@
 <style>
 h1 {
   padding-top: 2%;
-  border-bottom-width: 0.5vw;
+  border-bottom-width: var(--bw);
   border-bottom-style: solid;
   height: 10%;
   max-height: 100px;
   font-family: Playwrite FR Trad, cursive;
   word-spacing: 3vw;
   font-size: calc(1rem + 0.1dvh);
+  letter-spacing: 0.4vw;
 }
 </style>
 

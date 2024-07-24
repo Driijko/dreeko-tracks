@@ -2,13 +2,15 @@
   import viewportSetup from "./scripts/viewport/viewportSetup";
   import LoadingLayer from "./components/2-layers/LoadingLayer.svelte";
   import BackgroundLayer from "./components/2-layers/BackgroundLayer.svelte";
+  import PlaylistLayer from "./components/2-layers/PlaylistLayer.svelte";
 
   viewportSetup();
 </script>
 
 <main>
   <BackgroundLayer />
-  <LoadingLayer />
+  <PlaylistLayer />
+  <!-- <LoadingLayer /> -->
 </main>
 
   <!-- <div id="logo">

@@ -30,7 +30,6 @@
     };
 
     src = `./backgrounds/back${picNum}/${alignment}-${size}.webp`;
-    console.log(src);
   };
 
   $: getSrcAndSize();

@@ -4,13 +4,13 @@
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
 
-  const {primary, secondary} = playlist[$ctpi].colors;
+  const {color1, color2T} = playlist[$ctpi].colors;
 
  </script>
 
 <!-- MARKUP //////////////////////////////////////// -->
-<h1 class="center" style:color={primary}
- style:background-color={secondary}
+<h1 class="center" style:color={color1}
+ style:background-color={color2T}
 >
   DREEKO TRACKS
 </h1>

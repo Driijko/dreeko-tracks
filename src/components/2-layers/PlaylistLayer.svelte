@@ -3,18 +3,24 @@
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
   import Logo from "../5-elements/Logo.svelte";
+  import Playlist from "../4-structures/Playlist.svelte";
+  import CurrentTrackName from "../5-elements/CurrentTrackName.svelte";
+  import Interface from "../4-structures/Interface.svelte";
 
-  const { primary, secondary } = playlist[$ctpi].colors;
+  const { color1, color2T } = playlist[$ctpi].colors;
 
  </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
 <div class="playlist-layer vp-layer">
-  <div class="playlist-container"
-    style:border-color={primary}
-    style:background-color={secondary}
+  <div class="playlist-content-container"
+    style:border-color={color1}
+    style:background-color={color2T}
   >
     <Logo />
+    <Playlist />
+    <CurrentTrackName />
+    <Interface />
   </div>
 </div>
 
@@ -26,11 +32,13 @@
     display: flex;
     justify-content: center;
   }
-  .playlist-container {
+  .playlist-content-container {
     border-width: var(--bw);
     border-style: solid;
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
   }
 }
 

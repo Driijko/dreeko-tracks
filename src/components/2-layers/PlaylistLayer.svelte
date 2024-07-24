@@ -15,7 +15,6 @@
 <div class="playlist-layer vp-layer">
   <div class="playlist-content-container"
     style:border-color={color1}
-    style:background-color={color2T}
   >
     <Logo />
     <Playlist />

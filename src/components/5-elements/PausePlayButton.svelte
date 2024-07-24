@@ -7,7 +7,7 @@
   import playlist from "../../static/playlist";
   import {ctpi} from "../../dynamic/audio";
 
-  const {color2} = playlist[$ctpi].colors;
+  const {color1, color2} = playlist[$ctpi].colors;
 
   // ANIMATION ------------------------------------
   let animation;
@@ -62,7 +62,7 @@
 
 <!-- MARKUP ///////////////////////////////////////////////// -->
 <button class="pause-play-button" type="button" on:click={handleClick}
-  style:border-color={color2} style:color={color2}
+  style:border-color={color2} style:color={color2} style:background-color={color1}
 >
   <svg viewBox="0 0 100 100">
     <path/>

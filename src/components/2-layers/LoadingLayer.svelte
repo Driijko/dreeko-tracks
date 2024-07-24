@@ -14,6 +14,12 @@
   // LOAD EVENT ----------------------------------
   onMount(()=> {
     window.addEventListener("load", handleLoad);
+
+    // Just in case...
+    const timeoutId = setTimeout(()=> {
+      fade = true;
+      clearTimeout(timeoutId);
+    },4000);
     
     return ()=> {
       window.removeEventListener("load", handleLoad);
@@ -23,7 +29,7 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////////////////// -->
-<div class="loading-page vp" class:fade>
+<div class="loading-layer vp" class:fade>
   <div class="logo">
     DREEKO<br/>
     TRACKS
@@ -37,15 +43,19 @@
 
 <!-- STYLES ///////////////////////////////////////////////// -->
 <style>
-  .loading-page {
+  .loading-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: hsl(150, 100%, 50%);
     transition: opacity 4s ease-out;
+    pointer-events: none;
   }
-  .loading-page > div {
+  .loading-layer > div {
     width: 100%;
   }
   .logo {
@@ -93,7 +103,7 @@
   }
   /* PORTRAIT -------------------------------- */
   @media screen and (orientation: portrait) {
-    .loading-page > div {
+    .loading-layer > div {
       height: 30%;
     }
     .logo {
@@ -110,7 +120,7 @@
   }
   /* LANDSCAPE -------------------------------- */
   @media screen and (orientation: landscape) {
-    .loading-page > div {
+    .loading-layer > div {
       height: 25%;
     }
     .logo {

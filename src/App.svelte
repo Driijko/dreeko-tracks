@@ -1,12 +1,14 @@
 <script>
   import viewportSetup from "./scripts/viewport/viewportSetup";
-  import LoadingPage from "./components/2-pages/LoadingPage.svelte";
+  import LoadingLayer from "./components/2-layers/LoadingLayer.svelte";
+  import BackgroundLayer from "./components/2-layers/BackgroundLayer.svelte";
 
   viewportSetup();
 </script>
 
 <main>
-  <LoadingPage />
+  <BackgroundLayer />
+  <LoadingLayer />
 </main>
 
   <!-- <div id="logo">
@@ -17,6 +19,8 @@
 main {
   width: 100%;
   height: 100%;
+  position: relative;
+  background-color: black;
 }
 /* main {
   width: 100%;

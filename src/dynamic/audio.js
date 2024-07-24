@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
 
 // STATE /////////////////////////////////////
-export const currentTrackPlaylistIndex = writable(0);
+export const ctpi = writable(0); // current track playlist index
 export const audioPlaying = writable(false);

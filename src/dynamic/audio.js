@@ -9,3 +9,7 @@ export const volume = writable(0);
 export function togglePausePlay() {
   audioPlaying.set(!(get(audioPlaying)));
 };
+
+export function adjustVolume(volume) {
+  volume.set(volume);
+};

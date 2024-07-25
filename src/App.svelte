@@ -3,6 +3,7 @@
   import LoadingLayer from "./components/2-layers/LoadingLayer.svelte";
   import BackgroundLayer from "./components/2-layers/BackgroundLayer.svelte";
   import PlaylistLayer from "./components/2-layers/PlaylistLayer.svelte";
+  import VolumeLayer from "./components/2-layers/VolumeLayer.svelte";
 
   viewportSetup();
 </script>
@@ -10,6 +11,7 @@
 <main>
   <BackgroundLayer />
   <PlaylistLayer />
+  <VolumeLayer />
   <!-- <LoadingLayer /> -->
 </main>
 

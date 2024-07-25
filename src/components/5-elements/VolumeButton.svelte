@@ -40,7 +40,8 @@ button {
   border-style: solid;
   outline-width: 0;
   outline-style: solid;
-  transition: outline-width 1s ease-out;
+  transition: outline-width 1s linear;
+  z-index: 2;
 }
 .layer-open {
   outline-width: 150dvh;

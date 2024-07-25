@@ -11,7 +11,7 @@
 
 <!-- MARKUP ////////////////////////////////// -->
 <ul class="playlist-container"
-  style:background-color={color2T2}
+  style:background-color={window.innerWidth > 500 ? color2T2 : "transparent"}
 >
   {#each playlist as track,i}
     <TrackListItem number={i} />

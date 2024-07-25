@@ -48,7 +48,7 @@ button {
   border-style: solid;
   outline-width: 0;
   outline-style: solid;
-  transition: outline-width 1s linear;
+  transition: outline-width 0.5s linear;
   z-index: 2;
 }
 .layer-open {

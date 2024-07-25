@@ -16,7 +16,7 @@
 >
   <div class="container"
     style:opacity={ $volumeLayer ? 1 : 0}
-    style:transition-delay={$volumeLayer ? "0.5s": "0s"}
+    style:transition-delay={$volumeLayer ? "0.2s": "0s"}
   >
     <div class="message" style:color={color1}>ADJUST AUDIO VOLUME</div>
     <VolumeSlider />
@@ -38,7 +38,7 @@
   height: 70%;
   max-height: 700px;
   transition-timing-function: linear;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-property: opacity;
 }
 .message {

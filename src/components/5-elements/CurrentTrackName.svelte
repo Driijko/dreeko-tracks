@@ -18,12 +18,12 @@
 <!-- STYLES ///////////////////////////////////// -->
 <style>
 div {
-  height: 7%;
+  height: 10%;
   max-height: 50px;
   border-top-width: var(--bw);
   border-top-style: solid;
   font-family: "Julius Sans One", sans-serif;
-  font-size: calc(1rem + 0.2dvh);
+  font-size: calc(1rem + 1.7dvh);
   letter-spacing: 0.5vw;
 }
 </style>

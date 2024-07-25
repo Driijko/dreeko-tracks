@@ -10,6 +10,6 @@ export function togglePausePlay() {
   audioPlaying.set(!(get(audioPlaying)));
 };
 
-export function adjustVolume(volume) {
-  volume.set(volume);
+export function adjustVolume(newVolume) {
+  volume.set(newVolume);
 };

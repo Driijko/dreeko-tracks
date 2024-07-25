@@ -2,10 +2,6 @@
 <script>
   // IMPORTS -------------------------------------
   import { volume, adjustVolume } from "../../dynamic/audio";
-  import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
-
-  const {color1, color2} = playlist[$ctpi].colors;
 
   // EVENT HANDLERS ----------------------------------
   function handleInput(e) {
@@ -26,12 +22,8 @@
 input[type="range"] {
   width: 200px;
   height: 30px;
-  /* padding: 10px; */
   transform-origin: 50% 50%;
   transform: rotate(270deg);
-  /* position: absolute; */
-  /* top: 53%;
-  left: 10%; */
 }
 input[type="range"]::-webkit-slider-runnable-track {
   background-color: transparent;
@@ -44,9 +36,9 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track { 
   background-color: transparent;
   border-style:solid;
-  /* border-color: black; */
+  border-color: white;
   border-width: 5px;
-  height: 80%;
+  height: 20px;
   border-radius: 50px;
 }
 input[type="range"]::-webkit-slider-thumb {
@@ -57,16 +49,16 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50px;
   width: 40px;
   height: 40px;
-  margin-top: -12px; 
+  margin-top: -12.6px; 
 }
-/* input[type="range"]::-moz-range-thumb {
-  background-color: grey;
+input[type="range"]::-moz-range-thumb {
+  background-color: white;
   border-style: solid;
   border-color: black;
   border-width: 5px;
   border-radius: 50px;
-  width: 15%;
-  height: 40%;
-  margin-top: -4.8%; 
-} */
+  width: 30px;
+  height: 30px;
+  margin-top: 5px; 
+}
 </style>

@@ -3,7 +3,7 @@
   // IMPORTS -----------------------------------------
   import { gsap } from "gsap";
   import { onMount } from "svelte";
-  import { audioPlaying, togglePausePlay } from "../../dynamic/audio";
+  import { audioPaused, togglePausePlay } from "../../dynamic/audio";
   import playlist from "../../static/playlist";
   import {ctpi} from "../../dynamic/audio";
 
@@ -13,8 +13,8 @@
   let animation;
 
   onMount(()=> {
-    animation = (audioPlaying, duration) => {
-      if (audioPlaying) {
+    animation = (audioPaused, duration) => {
+      if (!audioPaused) {
         gsap.to(".pause-play-button path:nth-of-type(1)", {
           duration: duration,
           attr: {
@@ -28,7 +28,7 @@
           }
         });
       }
-      else if (audioPlaying === false) {
+      else if (audioPaused) {
         gsap.to(".pause-play-button path:nth-of-type(1)", {
           duration: duration,
           attr: {
@@ -45,12 +45,12 @@
     }
 
     // REACTIVE ON MOUNT --------------------------------------
-    animation($audioPlaying, 0);
+    animation($audioPaused, 0);
   });
 
   // REACTIVE --------------------------------------
   $: if (animation) {
-    animation($audioPlaying, 0.5);
+    animation($audioPaused, 0.5);
   };
 
   // EVENT HANDLERS -----------------------------------------

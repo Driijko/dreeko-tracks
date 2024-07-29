@@ -50,6 +50,8 @@ button {
   outline-style: solid;
   transition: outline-width 0.5s linear;
   z-index: 2;
+  position: absolute;
+  right: 5px;
 }
 .layer-open {
   outline-width: 150dvh;

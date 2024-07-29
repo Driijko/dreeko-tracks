@@ -30,5 +30,6 @@
   padding: 5px;
   border-top-width: var(--bw);
   border-top-style: solid;
+  position: relative;
 }
 </style>

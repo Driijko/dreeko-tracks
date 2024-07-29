@@ -78,6 +78,7 @@ button {
   border-width: 3.5px;
   border-style: solid;
   border-radius: 10%;
+  position: absolute;
 }
 svg {
   width: 100%; 

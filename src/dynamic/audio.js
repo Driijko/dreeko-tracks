@@ -2,8 +2,12 @@ import { writable, get } from "svelte/store";
 
 // STATE /////////////////////////////////////
 export const ctpi = writable(0); // current track playlist index
-export const audioPaused = writable(false);
+export const audioPaused = writable(true);
 export const volume = writable(0);
+export const currentTrack = writable({
+  name: "Buttercup",
+  path: "./audio/buttercup.mp3",
+});
 
 // FUNCTIONS /////////////////////////////////////////
 export function togglePausePlay() {

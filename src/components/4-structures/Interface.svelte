@@ -5,7 +5,7 @@
   import { ctpi } from "../../dynamic/audio";
   import PausePlayButton from "../5-elements/PausePlayButton.svelte";
   import VolumeButton from "../5-elements/VolumeButton.svelte";
-  import Timer from "../5-elements/Timer.svelte";
+  import TimeContainer from "./TimeContainer.svelte";
 
   const {color2, color1T, color1} = playlist[$ctpi].colors;
 
@@ -16,7 +16,7 @@
   style:color={color2} style:border-top-color={color1}
 >
   <PausePlayButton />
-  <Timer />
+  <TimeContainer />
   <VolumeButton />
 </div>
 

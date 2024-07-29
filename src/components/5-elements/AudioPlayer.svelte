@@ -1,10 +1,15 @@
 <!-- SCRIPTS //////////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { audioPaused, currentTrack } from "../../dynamic/audio";
+  import { audioPaused, currentTrack, volume } from "../../dynamic/audio";
 
   // ELEMENT REFERENCE --------------------------------------
   let audioElement;
+
+  // REACTIVE -------------------------------------------
+  $: if (audioElement) {
+    audioElement.volume = $volume;
+  };
 
 </script>
 

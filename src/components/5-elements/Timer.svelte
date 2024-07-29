@@ -7,20 +7,26 @@
 </script>
 
 <!-- MARKUP //////////////////////////////////// -->
-<!-- {#if $totalTime > 0} -->
-<div class="timer">
-  <span>
+<div class="timer center">
+  <div>
     {Math.floor($currentTime / 60)}:{
     Math.floor($currentTime % 60) < 10 ? 
     `0${Math.floor($currentTime % 60)}`
     : Math.floor($currentTime % 60)}
-  </span>
-  <span> / </span>
-  <span>
+  </div>
+  <div> / </div>
+  <div>
     {Math.floor($totalTime / 60)}:{
       Math.floor($totalTime % 60) < 10 ? 
       `0${Math.floor($totalTime % 60)}`
       : Math.floor($totalTime % 60)}
-  </span>
+  </div>
 </div>
-<!-- {/if} -->
+
+<!-- STYLES //////////////////////////////////// -->
+<style>
+.timer {
+  font-family: "Leckerli One", cursive;
+  gap: 4px;
+}
+</style>

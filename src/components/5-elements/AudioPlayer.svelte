@@ -1,7 +1,8 @@
 <!-- SCRIPTS //////////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { audioPaused, currentTrack, volume } from "../../dynamic/audio";
+  import { audioPaused, currentTrack, volume, currentTime, totalTime } 
+  from "../../dynamic/audio";
 
   // ELEMENT REFERENCE --------------------------------------
   let audioElement;
@@ -15,7 +16,7 @@
 
 <!-- MARKUP ///////////////////////////////////////////////// -->
 <audio controls bind:this={audioElement} bind:paused={$audioPaused}
-  src={$currentTrack.path}
+  src={$currentTrack.path} bind:currentTime={$currentTime}
 >
 
 </audio>

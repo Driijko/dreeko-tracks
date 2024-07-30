@@ -10,6 +10,7 @@ export const currentTrack = writable({
   name: "Buttercup",
   path: "./audio/buttercup.mp3",
 });
+export const seeking = writable(false);
 
 // FUNCTIONS /////////////////////////////////////////
 export function togglePausePlay() {
@@ -20,6 +21,14 @@ export function adjustVolume(newVolume) {
   volume.set(newVolume);
 };
 
+export function setCurrentTime(time) {
+  currentTime.set(time);
+};
+
 export function setTotalTime(time) {
   totalTime.set(time);
+};
+
+export function toggleSeeking() {
+  seeking.set(!get(seeking));
 };

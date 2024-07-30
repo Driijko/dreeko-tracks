@@ -3,7 +3,8 @@
   // IMPORTS -----------------------------------------
   import { gsap } from "gsap";
   import { onMount } from "svelte";
-  import { audioPaused, togglePausePlay } from "../../dynamic/audio";
+  import { audioPaused, togglePausePlay, seeking } 
+  from "../../dynamic/audio";
   import playlist from "../../static/playlist";
   import {ctpi} from "../../dynamic/audio";
 
@@ -49,13 +50,15 @@
   });
 
   // REACTIVE --------------------------------------
-  $: if (animation) {
+  $: if (animation && !$seeking) {
     animation($audioPaused, 0.5);
   };
 
   // EVENT HANDLERS -----------------------------------------
   function handleClick(e) {
-    togglePausePlay();
+    if (!$seeking) {
+      togglePausePlay();
+    }
   };
 
 </script>

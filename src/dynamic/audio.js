@@ -19,3 +19,7 @@ export function togglePausePlay() {
 export function adjustVolume(newVolume) {
   volume.set(newVolume);
 };
+
+export function setTotalTime(time) {
+  totalTime.set(time);
+};

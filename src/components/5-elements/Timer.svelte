@@ -2,7 +2,7 @@
 <script>
   // IMPORTS -----------------------------------
   import { currentTime, totalTime} 
-  from "../../dynamic/audio"
+  from "../../dynamic/audio";
   
 </script>
 

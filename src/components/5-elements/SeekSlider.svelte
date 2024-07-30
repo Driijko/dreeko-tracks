@@ -1,7 +1,7 @@
 <!-- SCRIPTS ////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------
-  import {totalTime, setCurrentTime} from "../../dynamic/audio";
+  import {totalTime, currentTime, setCurrentTime} from "../../dynamic/audio";
 
   // EVENT HANDLERS -------------------------------------
   function handleInput(e) {
@@ -11,7 +11,7 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////////////// -->
-<input type="range" min="0" max={$totalTime} step="0.01" 
+<input type="range" min="0" max={$totalTime} step="0.01" bind:value={$currentTime} 
   on:input={handleInput}
 />
 

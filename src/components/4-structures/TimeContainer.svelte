@@ -16,11 +16,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   position: absolute;
   width: 60%;
   left: 20%;
   height: 100%;
-  border: 1px solid blue;
 }
 </style>

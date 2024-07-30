@@ -1,9 +1,7 @@
 <!-- SCRIPTS ////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------
-  import { onMount } from "svelte";
-  import {totalTime, setCurrentTime, togglePausePlay} 
-  from "../../dynamic/audio";
+  import {totalTime, setCurrentTime} from "../../dynamic/audio";
 
   // EVENT HANDLERS -------------------------------------
   function handleInput(e) {
@@ -14,7 +12,7 @@
 
 <!-- MARKUP /////////////////////////////////////////////// -->
 <input type="range" min="0" max={$totalTime} step="0.01" 
-  on:input={handleInput} on:mousedown={(e) => {console.log(e.target.value)}}
+  on:input={handleInput}
 />
 
 <!-- STYLES //////////////////////////////////////////////////// -->
@@ -42,7 +40,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  margin-top: 1.2%; 
+  margin-top: 1.4%; 
 }
 input[type="range"]::-moz-range-thumb {
   background-color: white;

@@ -35,7 +35,7 @@
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////////// -->
-<audio controls bind:this={audioElement} bind:paused={$audioPaused}
+<audio bind:this={audioElement} bind:paused={$audioPaused}
   src={$currentTrack.path} bind:currentTime={$currentTime}
 >
 

@@ -5,10 +5,7 @@
   import { onMount } from "svelte";
   import { audioPaused, togglePausePlay, seeking } 
   from "../../dynamic/audio";
-  import playlist from "../../static/playlist";
-  import {ctpi} from "../../dynamic/audio";
-
-  const {color1, color2} = playlist[$ctpi].colors;
+  import { colors } from "../../dynamic/colors";
 
   // ANIMATION ------------------------------------
   let animation;
@@ -65,7 +62,7 @@
 
 <!-- MARKUP ///////////////////////////////////////////////// -->
 <button class="pause-play-button" type="button" on:click={handleClick}
-  style:border-color={color2} style:color={color2} style:background-color={color1}
+  style:border-color={$colors.color2} style:color={$colors.color2} style:background-color={$colors.color1}
 >
   <svg viewBox="0 0 100 100">
     <path/>

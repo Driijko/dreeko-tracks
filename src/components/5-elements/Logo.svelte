@@ -1,16 +1,13 @@
 <!-- SCRIPTS ////////////////////////////////// -->
  <script>
   // IMPORTS --------------------------------------
-  import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
-
-  const {color1, color2T} = playlist[$ctpi].colors;
+  import { colors } from "../../dynamic/colors";
 
  </script>
 
 <!-- MARKUP //////////////////////////////////////// -->
-<h1 class="center" style:color={color1}
- style:background-color={color2T}
+<h1 class="center" style:color={$colors.color1}
+ style:background-color={$colors.color2T}
 >
   DREEKO TRACKS
 </h1>

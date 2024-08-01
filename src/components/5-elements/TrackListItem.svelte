@@ -2,7 +2,7 @@
 <script>
   // IMPORTS ---------------------------------
   import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
+  import { ctpi, setCtpi } from "../../dynamic/audio";
 
   const {color1, color1D, color2T2, color2, color2D, color2T} = playlist[$ctpi].colors;
 
@@ -18,6 +18,11 @@
     playlist[number].colors.color2D
   ];
 
+  // EVENT HANDLERS ----------------------------------
+  function handleClick(e) {
+    setCtpi(number);
+  };
+
 </script>
 
 <!-- MARKUP ///////////////////////////// -->
@@ -25,7 +30,7 @@
   style:background-color={$ctpi === number ? color2T : color2T2}
   style:color={$ctpi === number ? color1 : color1D}
 >
-  <button>
+  <button on:click={handleClick}>
     <span class="number center" style:background-color={color2}
     style:border-color={$ctpi === number ? color1 : color1D}
     >

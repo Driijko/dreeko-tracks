@@ -4,7 +4,7 @@
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
 
-  const name = playlist[$ctpi].name;
+  $: name = playlist[$ctpi].name;
   const {color1, color2T} = playlist[$ctpi].colors;
 </script>
 

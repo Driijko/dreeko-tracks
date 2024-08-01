@@ -13,7 +13,7 @@
 <!-- MARKUP /////////////////////////////////////// -->
 <input type="range" class="audio-bkg-volume-slider"
   min="0.00" max="1.00" step="0.01" 
-  value="{$volume}" on:input={handleInput} 
+  bind:value="{$volume}" on:input={handleInput} 
   style:border-color={"white"}
 />
 

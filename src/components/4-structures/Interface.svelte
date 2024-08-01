@@ -3,6 +3,7 @@
   // IMPORTS ---------------------------------------
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
   import PausePlayButton from "../5-elements/PausePlayButton.svelte";
   import VolumeButton from "../5-elements/VolumeButton.svelte";
   import TimeContainer from "./TimeContainer.svelte";
@@ -12,8 +13,8 @@
 </script>
 
 <!-- MARKUP ///////////////////////////////////// -->
-<div class="interface" style:background-color={color1T}
-  style:color={color2} style:border-top-color={color1}
+<div class="interface" style:background-color={$colors.color1T}
+  style:color={$colors.color2} style:border-top-color={$colors.color1}
 >
   <PausePlayButton />
   <TimeContainer />

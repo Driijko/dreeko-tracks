@@ -3,14 +3,15 @@
   // IMPORTS -------------------------------------
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
 
   $: name = playlist[$ctpi].name;
-  const {color1, color2T} = playlist[$ctpi].colors;
+
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
-<div style:background-color={color2T} style:color={color1} class="center"
-  style:border-color={color1}
+<div style:background-color={$colors.color2T} style:color={$colors.color1} class="center"
+  style:border-color={$colors.color1}
 >
   {name}
 </div>

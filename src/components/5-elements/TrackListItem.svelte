@@ -3,6 +3,7 @@
   // IMPORTS ---------------------------------
   import playlist from "../../static/playlist";
   import { ctpi, setCtpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
 
   const {color1, color1D, color2T2, color2, color2D, color2T} = playlist[$ctpi].colors;
 
@@ -21,6 +22,7 @@
   // EVENT HANDLERS ----------------------------------
   function handleClick(e) {
     setCtpi(number);
+    console.log($colors);
   };
 
 </script>

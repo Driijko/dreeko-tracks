@@ -5,8 +5,6 @@
   import { ctpi, setCtpi } from "../../dynamic/audio";
   import { colors } from "../../dynamic/colors";
 
-  const {color1, color1D, color2T2, color2, color2D, color2T} = playlist[$ctpi].colors;
-
   // PROPS ---------------------------------------
   export let number;
 
@@ -22,19 +20,18 @@
   // EVENT HANDLERS ----------------------------------
   function handleClick(e) {
     setCtpi(number);
-    console.log($colors);
   };
 
 </script>
 
 <!-- MARKUP ///////////////////////////// -->
-<li style:border-color={color1D}
-  style:background-color={$ctpi === number ? color2T : color2T2}
-  style:color={$ctpi === number ? color1 : color1D}
+<li style:border-color={$colors.color1D}
+  style:background-color={$ctpi === number ? $colors.color2T : $colors.color2T2}
+  style:color={$ctpi === number ? $colors.color1 : $colors.color1D}
 >
   <button on:click={handleClick}>
-    <span class="number center" style:background-color={color2}
-    style:border-color={$ctpi === number ? color1 : color1D}
+    <span class="number center" style:background-color={$colors.color2}
+    style:border-color={$ctpi === number ? $colors.color1 : $colors.color1D}
     >
       {number}.
     </span>

@@ -2,6 +2,7 @@
  <script>
   import playlist from "../../static/playlist";
   import { ctpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
   import Logo from "../5-elements/Logo.svelte";
   import Playlist from "../4-structures/Playlist.svelte";
   import CurrentTrackName from "../5-elements/CurrentTrackName.svelte";

@@ -1,15 +1,13 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------
-  import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
   import { volume } from "../../dynamic/audio";
   import { volumeLayer, toggleVolumeLayer } from "../../dynamic/volumeLayer";
   import VolumeOffIcon from "../6-icons/VolumeOffIcon.svelte";
   import VolumeLowIcon from "../6-icons/VolumeLowIcon.svelte";
   import VolumeHighIcon from "../6-icons/VolumeHighIcon.svelte";
 
-  const {color1, color2, color2T3} = playlist[$ctpi].colors;
 
   // EVENT HANDLERS -------------------------------------
   function handleClick(e) {
@@ -20,9 +18,9 @@
 
 <!-- MARKUP ///////////////////////////////////////////// -->
 <button
-  style:background-color={color1}
-  style:border-color={color2}
-  style:outline-color={color2T3}
+  style:background-color={$colors.color1}
+  style:border-color={$colors.color2}
+  style:outline-color={$colors.color2T3}
   class:layer-open={$volumeLayer}
   on:click={handleClick}
   class:volume-off={$volume < 0.03}

@@ -1,21 +1,17 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
  <script>
-  import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
   import { colors } from "../../dynamic/colors";
   import Logo from "../5-elements/Logo.svelte";
   import Playlist from "../4-structures/Playlist.svelte";
   import CurrentTrackName from "../5-elements/CurrentTrackName.svelte";
   import Interface from "../4-structures/Interface.svelte";
 
-  const { color1, color2T } = playlist[$ctpi].colors;
-
  </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
 <div class="playlist-layer vp-layer">
   <div class="playlist-content-container"
-    style:border-color={color1}
+    style:border-color={$colors.color1}
   >
     <Logo />
     <Playlist />

@@ -2,16 +2,14 @@
 <script>
   // IMPORTS -----------------------------------
   import playlist from "../../static/playlist";
-  import { ctpi } from "../../dynamic/audio";
+  import { colors } from "../../dynamic/colors";
   import TrackListItem from "../5-elements/TrackListItem.svelte";
 
-
-  const {color2T2} = playlist[$ctpi].colors;
 </script>
 
 <!-- MARKUP ////////////////////////////////// -->
 <ul class="playlist-container"
-  style:background-color={window.innerWidth > 500 ? color2T2 : "transparent"}
+  style:background-color={window.innerWidth > 500 ? $colors.color2T2 : "transparent"}
 >
   {#each playlist as track,i}
     <TrackListItem number={i} />
